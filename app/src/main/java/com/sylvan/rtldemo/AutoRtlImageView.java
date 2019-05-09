@@ -28,6 +28,7 @@ public class AutoRtlImageView extends AppCompatImageView {
 
     public void init() {
         if (LanguageUtil.isLayoutRTL()) {
+            //水平翻转
             Log.d(TAG, "setRotationY: 180");
             setRotationY(ROTATION_Y_180);
         } else {
